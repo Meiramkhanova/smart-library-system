@@ -6,15 +6,17 @@
 
 1. IntelliJ IDEA (preferably Ultimate edition, because there is a Maven Plugin there) (https://www.jetbrains.com/idea/download/?section=windows)
 2. Postman (https://www.postman.com/downloads/) 
+3. Java Development Kit 21 (You can setup JDK in Intellij IDEA)
 
 ### Explaining how to run the code
 
 1. Open project in IntelliJ IDEA
 2. Wait until maven downloads all the dependencies and performs indexing
-3. Make sure that other processes do not occupy port localhost:8080
-4. Click on the green arrow (Run Button) or Open the maven plugin window (screenshot below) and write ```` mvn spring-boot:run  ```` (in Maven Console)
+3. If you have problems downloading packages, you can use the ```` mvn clean install ```` and ```` mvn clean package ```` commands.
+4. Make sure that other processes do not occupy port localhost:8080
+5. Click on the green arrow (Run Button) or Open the maven plugin window (screenshot below) and write ```` mvn spring-boot:run  ```` (in Maven Console)
    ![Maven Plugin Screenshot](maven_window_image.png)
-5. Wait until the log appears ```` Started SmartLibrarySystemApplication in 0.37 seconds (process running for 316.916) ````
+6. Wait until the log appears ```` Started SmartLibrarySystemApplication in 0.37 seconds (process running for 316.916) ````
 
 ### Explaining how Test endpoints
 1. Download the file ```` smart_library_25MD0278_Meiramkhanva_Adina_postman_collection.json ```` (it is in the .zip file)
